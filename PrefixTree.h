@@ -23,7 +23,7 @@ struct stack_node{
 
 
 void msd(uchar *a, int l, int r, int d, uint *So);
-void APSP_PrefixTree(char *filename, char *output, char* sorting, int threads, int min);
+void APSP_PrefixTree(char *filename, char *output, int threads, int min);
 struct tree_node *create_tree(uchar *text,uint k,ulong n,ulong startp[],uint sorted[]);
 struct tree_node *create_tree_modified(uchar *text,uint k,ulong n,ulong startp[],struct stack_node **stacks);
 

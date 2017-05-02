@@ -23,8 +23,6 @@
 using namespace std;
 
 void displayhelp();
-void print(uchar *a);
-bool isTerminator(uchar i);
 void display_choices(char *filename, char *output, int threads,int min,int mismatches,bool hamming);
 
 
@@ -51,7 +49,7 @@ int main(int argc,char *argv[])
   processors = omp_get_num_procs(); // use all threads
   minlength = 1; // minimal accepted length
   output[0] = '2';  // output results
-  sorting[0] = '0'; // no sorting for prefix tree option
+  
   filename = argv[1];
   mismatches = 0;  // exact match
   hamming = true;  // useful only with approximate match
@@ -78,7 +76,7 @@ int main(int argc,char *argv[])
 
   
   if (mismatches==0)
-	  APSP_PrefixTree(filename, output, sorting, processors, minlength);
+	  APSP_PrefixTree(filename, output, processors, minlength);
   else
 	  AAPSP_PigeonHole_Approximate_Match(filename, output, processors, minlength, mismatches, hamming);
 
@@ -86,20 +84,6 @@ int main(int argc,char *argv[])
 }
 
 
-
-void print(uchar *a){
-  int con=0;
-  int strs=0;
-  while (a[con]!='\0'){
-    if (a[con]=='#'){ 
-      cout<<" "<<strs<<endl;strs++; 
-    }else 
-      putchar(a[con]);
-    con++;
-  }
-
-  cout<<"------------" <<endl;
-}
 
 
 void displayhelp(){

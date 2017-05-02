@@ -9,10 +9,10 @@ extern ulong N;
 extern uint K;
 extern ulong *startS;
 
-void APSP_PrefixTree(char *filename, char *output, char* sorting, int threads, int min)
+void APSP_PrefixTree(char *filename, char *output, int threads, int min)
 {
-
-
+	char sorting[2];
+	sorting[0] = '0';
 
 	// N is the total length of the all strings. we have k strings.   
 	uint *Sorted = new uint[MAX_K];
