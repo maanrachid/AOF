@@ -30,8 +30,7 @@ void APSP_PrefixTree(char *filename, char *output, int threads, int min)
 	{
 		posSize = file.tellg();
 		ulong size = posSize;
-		if (MAX_N != 0 && size > MAX_N)
-			size = MAX_N;
+		
 		char *memblock = new char[size / BUFFER + 1];
 		text = new uchar[size / 4];
 		reminder = size%BUFFER;

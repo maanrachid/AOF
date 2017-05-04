@@ -51,8 +51,7 @@ void AAPSP_PigeonHole_Approximate_Match(char *filename, char *output, int thread
 	{
 		posSize = file.tellg();
 		ulong size = posSize;
-		if (MAX_N != 0 && size > MAX_N)
-			size = MAX_N;
+		
 		char *memblock = new char[size / BUFFER + 1];
 		text = new uchar[size / 4];
 		reminder = size%BUFFER;

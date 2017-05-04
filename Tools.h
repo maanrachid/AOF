@@ -119,8 +119,7 @@ public:
 };
 
 // My tools : some useful functions and definitions
-#define MAX_K 1000000
-#define MAX_N 1400000000
+#define MAX_K 100000000
 #define SEPERATOR '\n'
 
 
