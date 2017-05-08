@@ -8,6 +8,7 @@ default: $(objects)
 	$(CC) gen_test.cpp -o gen
 	$(CC) converter_fasta_to_plain.cpp -o converter
 	$(CC) reverse_complement.c -o reverse_complement
+	$(CC) check_a_string.cpp -o check_a_string
 
 clean:
 	rm -f core *.exe *.o *~ Apsp test.* 

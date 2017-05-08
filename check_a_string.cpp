@@ -15,7 +15,11 @@ int main(int argc, char *argv[]){
 
   int i; int countk=0;
   bool startprinting=false;
-  
+
+  if (argc!=3){
+    printf("To run ./check_a_string inputfile read_id\n");
+    return 0;
+  }
 
   do {
     if (countk==atoi(argv[2])){

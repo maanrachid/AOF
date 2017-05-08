@@ -142,6 +142,7 @@ int main(int argc, char *argv[]){
 	}
 	else {
 		cerr << argv[1] << " could not be opened.\n";
+		return 0;
 	}
 
 	file.close();
