@@ -227,12 +227,17 @@ void AAPSP_PigeonHole_Approximate_Match(char *filename, char *output, int thread
 								if (A[i][r] < str1.length())
 									A[i][r] = str1.length();
 							} else if (output[0] == '2' && printed->find(r) == printed->end()){
-								printf("%d %d-> %d\n", i, r, str1.length());
-								(*printed)[r] = 1;
+								
 								if (!hamming){
-									cout << before_suffix << parts << after_suffix << endl;
-									cout << before_prefix << parts << after_prefix << endl;;
-								}
+									string s = "";
+									stringstream ss(s);
+									ss << i << " " << r << "-> " << str1.length() << endl;
+									ss << before_suffix << parts << after_suffix << endl;
+									ss << before_prefix << parts << after_prefix << endl;
+									cout << ss.str();
+								}else 
+									printf("%d %d-> %d\n", i, r, str1.length());
+								(*printed)[r] = 1;
 							}
 							//ss>> h;
 							//matchinglist.push_back(h);
