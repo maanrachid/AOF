@@ -285,6 +285,7 @@ bool compare(int start, string str, int r1, int r2, int sizeToCompare, uchar *te
 		}
 	}
 	else {
+		if (sizeToCompare == 0) return true;
 		string tprefix="";
 		string tsuffix = "";
 		int limit;
@@ -306,6 +307,7 @@ bool compare(int start, string str, int r1, int r2, int sizeToCompare, uchar *te
 		int align = String_Alignment(tprefix, tsuffix, 1, 0, 1, mismatches, v,w,backtra,full_prefix);
 		*mismatches +=align;
 		//if (tsuffix.length()<10 && tsuffix=="TGTTTCACT") cerr << "Align:"<< align << " mismatches:"<<*mismatches<< endl;
+		
 		if ((*mismatches) <= -1) return false;
 
 	}

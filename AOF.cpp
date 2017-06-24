@@ -111,7 +111,7 @@ void display_choices(char *filename, char *output, int threads,int min,int misma
   else if (output[0]=='1')
     cerr<<" Maximum suffix-prefix matches are shown in two dimentional array."<<endl;
   else if (output[0] == '2')
-    cerr<<" All overlaps are shown. Alignments can be shown if edit distance is used (-t 1). "<<endl;
+    cerr<<" All overlaps are shown. Alignments can be shown if edit distance is used (-t 0). "<<endl;
 
 
   cerr<<"Number of threads:"<<threads<<endl;
