@@ -11,7 +11,7 @@ default: $(objects)
 	$(CC) check_a_string.cpp -o check_a_string
 
 clean:
-	rm -f core *.exe *.o *~ Apsp test.* 
+	rm -f core *.exe *.o *~ Apsp test.* AOF converter gen reverse_complement check_a_string 
 
 
 
