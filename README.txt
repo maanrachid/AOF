@@ -59,8 +59,8 @@ void AAPSP_PigeonHole_Approximate_Match(char *filename, char *output,
      					     	int threads, int min,
 						int mismatches,bool hamming);
 
-        This function finds the approximate maximum overlap or all approximate overlaps between every ordered pair of sequences.
-	It takes the following parameters:
+        This function finds the approximate maximum overlap or all approximate
+	overlaps between every ordered pair of sequences. It takes the following parameters:
 
 	- Filename: the name of the input file.
 	
