@@ -1,4 +1,4 @@
-Approximate Overlap Finder (AOF)
+﻿Approximate Overlap Finder (AOF)
 
 Introduction
 --------------
@@ -10,7 +10,8 @@ This library improves and combines our previously presented techniques in
 order to offer a flexible tool for a de novo assembler engineer in order
 to handle the all-pairs suffix prefix problem efficiently. This solution
 uses OpenMp to support multithreading. This library is tested on Linux
-and Cygwin.
+and Cygwin. AOF has the ability to find the approximate matches between reads 
+in both Hamming distance and edit distances flavors.
 
 
 Compile and Usage
@@ -138,5 +139,6 @@ DIRECTLY.
 - If you have any problem, please contact us:
 
 Maan Haj Rachid
-Qatar University
-mh1108047@qu.edu.qa
+Karolinska Institutet
+maan.rachid@scilifelab.se
+maanhajrachid@hotmail.com
