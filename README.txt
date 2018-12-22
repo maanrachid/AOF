@@ -10,8 +10,8 @@ This library improves and combines our previously presented techniques in
 order to offer a flexible tool for a de novo assembler engineer in order
 to handle the all-pairs suffix prefix problem efficiently. This solution
 uses OpenMp to support multithreading. This library is tested on Linux
-and Cygwin. AOF has the ability to find the approximate matches between reads 
-in both Hamming distance and edit distances flavors.
+and Cygwin. AOF has the ability to find the approximate overlaps between reads 
+in both Hamming and edit distances flavors.
 
 
 Compile and Usage
